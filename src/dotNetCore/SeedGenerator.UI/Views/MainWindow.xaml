@@ -1,0 +1,72 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:SeedGenerator.UI.ViewModels;assembly=SeedGenerator.UI"
+        Icon="resm:SeedGenerator.UI.Assets.iota.png"
+        Width="450"
+        MaxWidth="450"
+        MinWidth="450"
+        Height="500"
+        MaxHeight="500"
+        MinHeight="500"
+        Title="IOTA Offline Seed Generator">
+  <Window.Background>
+    <ImageBrush Source="Assets/background.png" Stretch="Fill"/>
+  </Window.Background>
+  <Design.DataContext>
+    <vm:MainWindowViewModel/>
+  </Design.DataContext>
+
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="250"/>
+      <RowDefinition Height="100"/>
+      <RowDefinition Height="50"/>
+      <RowDefinition Height="100"/>
+    </Grid.RowDefinitions>
+
+    <Image Grid.Row="0"
+           Height="200"
+           Width="200"
+           VerticalAlignment="Center"
+           Source="Assets/iota-logo.png"/>
+
+    <TextBlock Grid.Row="1"
+               Width="415"
+               TextWrapping="Wrap"
+               Background="Transparent"
+               FontFamily="Verdana"
+               FontSize="14"
+               Foreground="White"
+               TextAlignment="Center"
+               VerticalAlignment="Bottom"
+               HorizontalAlignment="Center"
+               Text="{Binding Seed, Mode=OneWay}"/>
+
+    <Button Grid.Row="2"
+            Width="50"
+            Height="30"
+            Background="White"
+            Content="Copy"
+            BorderThickness="1"
+            Cursor="Hand"
+            FontWeight="Bold"
+            Foreground="#25b5a8"
+            Command="{Binding Copy}"
+            IsVisible="{Binding IsGenerated}"/>
+    
+    <Button Grid.Row="3" 
+            Content="GENERATE" 
+            FontFamily="Verdana" 
+            Background="Black" 
+            Height="60" 
+            Width="380" 
+            FontSize="14"
+            Foreground="White"
+            BorderThickness="0"
+            Cursor="Hand"
+            Command="{Binding GenerateNewSeed}" />
+  </Grid>
+  
+
+  
+</Window>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeedGenerator.UI", "SeedGenerator.UI\SeedGenerator.UI.csproj", "{3BF6CB4E-A655-421D-811D-4E17C7BC191C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeedGenerator.UI.Tests", "SeedGenerator.UI.Tests\SeedGenerator.UI.Tests.csproj", "{E4DC3E63-4C3A-4782-8979-35ECBFD4D80A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BF6CB4E-A655-421D-811D-4E17C7BC191C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BF6CB4E-A655-421D-811D-4E17C7BC191C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BF6CB4E-A655-421D-811D-4E17C7BC191C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BF6CB4E-A655-421D-811D-4E17C7BC191C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4DC3E63-4C3A-4782-8979-35ECBFD4D80A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4DC3E63-4C3A-4782-8979-35ECBFD4D80A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4DC3E63-4C3A-4782-8979-35ECBFD4D80A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4DC3E63-4C3A-4782-8979-35ECBFD4D80A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6BD60C5D-CF79-4CC6-B2FE-176263CB0C58}
+	EndGlobalSection
+EndGlobal
